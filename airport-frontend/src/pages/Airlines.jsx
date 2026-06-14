@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API = "http://localhost:3000/api";
+const API = "https://airport-system-production.up.railway.app/api";
 
 function AnimatedNumber({ value }) {
   const [display, setDisplay] = useState(0);

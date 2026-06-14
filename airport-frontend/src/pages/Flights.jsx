@@ -7,7 +7,7 @@ function Flights() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/flights')
+    axios.get('https://airport-system-production.up.railway.app/api/flights')
       .then(res => setFlights(res.data))
       .catch(err => console.log(err))
   }, [])

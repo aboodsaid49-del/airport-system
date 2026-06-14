@@ -10,9 +10,9 @@ function Dashboard() {
     const fetchStats = async () => {
       try {
         const [flights, bookings, passengers] = await Promise.all([
-          axios.get('http://localhost:3000/api/flights'),
-          axios.get('http://localhost:3000/api/bookings'),
-          axios.get('http://localhost:3000/api/passengers'),
+          axios.get('https://airport-system-production.up.railway.app/api/flights'),
+          axios.get('https://airport-system-production.up.railway.app/api/bookings'),
+          axios.get('https://airport-system-production.up.railway.app/api/passengers'),
         ])
         setStats({
           flights: flights.data.length,

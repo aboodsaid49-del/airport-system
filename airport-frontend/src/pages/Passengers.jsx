@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:3000/api";
+const API_BASE = "https://airport-system-production.up.railway.app/api";
 
 const nationalityFlag = (nat = "") => {
   const map = {

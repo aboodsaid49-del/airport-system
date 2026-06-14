@@ -10,7 +10,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:3000/api/users/login', {
+      const res = await axios.post('https://airport-system-production.up.railway.app/api/users/login', {
         email: username,
         password
       })
